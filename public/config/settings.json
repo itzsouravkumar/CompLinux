@@ -1,0 +1,5 @@
+{
+  "environment": "example",
+  "nfsServer": "192.0.2.10",
+  "mountPoint": "/mnt/nfs-lab"
+}

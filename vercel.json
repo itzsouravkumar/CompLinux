@@ -1,0 +1,75 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/context.txt"
+    },
+    {
+      "source": "/private/:file(.+)",
+      "destination": "/api/private?file=:file"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "sandbox; default-src 'none'"
+        }
+      ]
+    },
+    {
+      "source": "/:file((?!private/|api/).*\\.(?:txt|sh|log|conf|ini|toml|env|py|c|go|rs|java|ts|sql))",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/:file((?!private/|api/).*\\.md)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/:file((?!private/|api/).*\\.json)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "source": "/:file((?!private/|api/).*\\.ya?ml)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/yaml"
+        }
+      ]
+    },
+    {
+      "source": "/:file((?!private/|api/).*\\.csv)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/csv; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}

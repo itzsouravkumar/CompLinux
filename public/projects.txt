@@ -1,0 +1,3 @@
+Computer Linux lab
+Topics: LVM, NFS, AutoFS, users, and groups.
+Start with /context.txt for the list of practicals.

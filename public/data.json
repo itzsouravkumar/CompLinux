@@ -1,0 +1,10 @@
+{
+  "name": "Computer Linux lab",
+  "topics": {
+    "LVM": "/linux/lvm.md",
+    "NFS": "/linux/nfs.md",
+    "AutoFS": "/linux/autofs.md",
+    "Users": "/linux/users.md",
+    "Groups": "/linux/groups.md"
+  }
+}

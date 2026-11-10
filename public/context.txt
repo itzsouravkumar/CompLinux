@@ -1,0 +1,19 @@
+Sourav Kumar | Personal File Repository
+
+Linux lab assignment
+  /linux/lvm.md       Eight LVM practicals with verification and cleanup
+  /linux/nfs.md       NFSv4 server and client, read/write test, persistent mount
+  /linux/autofs.md    NFS automount with indirect and direct maps
+  /linux/users.md     Local users, passwords and account lifecycle
+  /linux/groups.md    Group membership and shared directory permissions
+
+Examples
+  /projects.txt
+  /projects/research.md
+  /data.json
+  /config/settings.json
+  /examples/settings.yaml
+  /examples/results.csv
+  /examples/hello.sh
+  /examples/lab.log
+  /examples/sample.zip
