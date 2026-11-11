@@ -1,4 +1,4 @@
-Sourav Kumar | Personal File Repository
+Linux | Personal File Repository
 
 Linux lab assignment
   /linux/lvm.md       Eight LVM practicals with verification and cleanup

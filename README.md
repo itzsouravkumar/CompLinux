@@ -1,4 +1,4 @@
-# Sourav's raw file repository
+# Linux's raw file repository
 
 A personal repository for text, source snippets and binary downloads. The files
 inside `public/` go directly to Vercel's static output. For private downloads,
@@ -46,7 +46,7 @@ Public examples are safe to share, including the example configuration files.
    ```
 
 2. When prompted, choose your personal Vercel scope and create a fresh project
-   named `souravisadev`. Keep the current directory as project root and the
+   named `Linuxisadev`. Keep the current directory as project root and the
    checked-in build settings. Framework Preset is Other and Output Directory is
    `public`. Use the Production domain shown in the deployment output or under
    **Settings → Domains**. If the preferred alias is taken, use the assigned one.
@@ -54,7 +54,7 @@ Public examples are safe to share, including the example configuration files.
    domains may have deployment protection. Use the production alias in scripts.
 
    ```bash
-   BASE=https://souravisadev.vercel.app
+   BASE=https://Linuxisadev.vercel.app
    curl -fsSL "$BASE/context.txt"
    curl -fsSL "$BASE/context.txt" | cat
    curl -fsSL "$BASE/projects.txt" -o projects.txt
@@ -78,7 +78,7 @@ serves its public files. If the directory is new to Git, initialize it and push.
 git init -b main
 git add .
 git commit -m "Create raw file repository and Linux labs"
-git remote add origin https://github.com/YOUR_USERNAME/souravisadev.git
+git remote add origin https://github.com/YOUR_USERNAME/Linuxisadev.git
 git push -u origin main
 ```
 
@@ -121,7 +121,7 @@ files under `public/` and commit the changes. For example, commit
    process arguments.
 
    ```bash
-   BASE=https://souravisadev.vercel.app
+   BASE=https://Linuxisadev.vercel.app
    curl -sS -o /dev/null -w '%{http_code}\n' "$BASE/private/notes/notes.md"
    printf 'Authorization: Bearer %s\n' "${PRIVATE_READ_TOKEN:?Set PRIVATE_READ_TOKEN first}" |
      curl -fsS -H @- "$BASE/private/notes/notes.md" -o notes.md
